@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table th:object="${blog}">
+    <tr>
+        <td>TIEU DE</td>
+        <td>NOI DUNG</td>
+    </tr>
+    <tr><td th:text="${blog.getBlog_tieude()}"></td>
+        <td th:text="${blog.getBlog_noidung()}"></td></tr>
+
+</table>
+</body>
+</html>

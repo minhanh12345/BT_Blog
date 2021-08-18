@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+    <table>
+        <tr th:object="${blog}">
+            <td><input th:field="*{blog_id}"></td>
+<!--        tự động sinh ra name = "name" , id = "name" , value = "*{name}"-->
+            <td><input th:field="*{blog_tieude}"></td>
+
+            <td><input th:field="*{blog_tomtat}" ></td>
+
+            <td><input th:field="*{blog_noidung}"></td>
+            <td>
+                <button type="submit">Edit</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
